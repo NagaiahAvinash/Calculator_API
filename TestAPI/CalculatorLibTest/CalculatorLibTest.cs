@@ -48,8 +48,7 @@ namespace CalculatorLib.Tests
         [DataRow(-1, -1, 1)]
         [DataRow(0, 1, 0)]
         [DataRow(-10, 2, -5)]
-        // Note: This DataRow cannot precisely represent the result of 1/3 as an int
-        // Consider adjusting the test or using a different type if precision is needed
+        
         public void Division_ReturnsCorrectValue(int x, int y, int expected)
         {
             var result = _calculator.Division(x, y);
